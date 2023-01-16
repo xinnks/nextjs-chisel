@@ -1,13 +1,30 @@
 {
-    "compilerOptions": {
-        "experimentalDecorators": true,
-        "lib": ["ESNext", "DOM"],
-        "target": "ESnext",
-        "allowJs": true,
-        "module": "ESnext",
-        "moduleResolution": "node",
-        "isolatedModules": true,
-        "noEmit": true
-    },
-    "exclude": [".webpack"]
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "target": "ESnext",
+    "allowJs": true,
+    "module": "ESnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve"
+  },
+  "exclude": [
+    ".webpack"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
